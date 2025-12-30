@@ -1,17 +1,17 @@
 server:
-  port: 8081
+  port: 8088
 
 spring:
   cloud:
     consul:
-      host: localhost
+      host: consul
       port: 8500
       discovery: SERVICE-CLIENT
   application:
     name: SERVICE-CLIENT
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/clientservicedb?createDatabaseIfNotExist=true
+    url: jdbc:mysql://mysql:3306/Micro_ClientDB?createDatabaseIfNotExist=true
     username: root
     password: root
   jpa:
